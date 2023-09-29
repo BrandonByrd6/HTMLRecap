@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLRecap</title>
+    <style>
+        .bg-gray {
+            background-color: gray;
+        }
+        .margin-5 {
+            margin: 5px;
+        }
+
+        .cool-div {
+            width: 100%;
+            height: 80vh;
+            background-color: purple;
+            text-align: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="#nav">
+            <a href="#nav">Nav</a></li>
+            <a href="#form">Form & input</a></li>
+            <a href="#div">div</a></li>
+            <a href="#iframe">Iframe</a>
+    </nav>
+
+    <div style="text-align: center;">
+        <h1>Welcome to HTML Recap</h1>
+    </div>
+    <p>We will be using the following tags in this HTML Document</p>
+    <ol>
+        <li>form</li>
+        <li>input</li>
+        <li>div</li>
+        <li>iframe</li>
+        <li>nav</li>
+    </ol>
+
+    <div id="form">
+        <h2>Number 1 and 2: Form and Input</h2>
+        <h3>Add an Employee</h3>
+        <form class="bg-gray">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="margin-5">
+                    <label for="first_name">First Name: </label>
+                    <input id=="first_name" name="first_name" type="text">
+                </div>
+                <div class="margin-5">
+                    <label for="last_name">Last Name: </label>
+                    <input type="text" name="last_name" id="last_name">
+                </div>
+                <div class="margin-5">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="margin-5">
+                    <label for="telephone">Phone Number: </label>
+                    <input type="tel" name="telephone" id="telephone">
+                </div>
+                <div class="margin-5">
+                    <label for="birthday">Date of Birth: </label>
+                    <input type="date" name="birthday" id="birthday">
+                </div>
+            </fieldset>
+            <fieldset disabled>
+                <legend>Work Role</legend>
+                <div class="margin-5">
+                    <label for="software">Software Developer: </label>
+                    <input id="software" name="work_role" type="radio"> 
+                    <br />
+                    <label for="security">Cyber Security Analyst: </label>
+                    <input id="security" name="work_role" type="radio">
+                    <br />
+                    <label for="engineer">Data Engineer: </label>
+                    <input id="engineer" name="work_role" type="radio">
+                    <br />
+                    <label for="it">Information Techonolgy Specialist: </label>
+                    <input id="software" name="work_role" type="radio">
+                </div>
+            </fieldset>
+            <input class="margin-5" type="submit" value="Add Employee">
+        </form>    
+    </div>
+
+    <h2>Number 3: Div</h2>
+    <div id="div" class="cool-div">
+        <p>Cool Colored Div</p>
+    </div>
+
+    <div id="iframe">
+    <h2>Number 4: IFrame</h2>
+    <h3>Great song</h3>
+    <iframe src="https://www.youtube.com/embed/T_5PHU7vQu4" frameborder="0"></iframe>
+    </div>
+</body>
+</html>
